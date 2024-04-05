@@ -1,0 +1,20 @@
+.attribution { 
+  padding: 1.5rem 0 0 0;
+  font-size: 0.8rem; 
+  text-align: center;
+  color: white;
+}
+
+.attribution a { 
+  color: var(--pale-blue); 
+}
+
+.break {
+  display: block;
+}
+
+@media  screen and (min-width: 62rem) {
+  .break {
+    display: inline;
+  }
+}

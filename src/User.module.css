@@ -1,0 +1,17 @@
+.user {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  min-width: 18.25rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .user {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 61.5rem;
+    min-height: 28.75rem;
+    gap: 1.75rem;
+  }
+}

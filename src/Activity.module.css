@@ -1,0 +1,152 @@
+.allContainer {
+  --activity-border-radius: 0.85rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: var(--dark-blue);
+  border-radius: var(--activity-border-radius);
+  width: 100%;
+  height: 9rem;
+}
+
+.allBkg {
+  background-repeat: no-repeat;  
+  background-size: 4rem;  
+}
+
+.bkg_Work {
+  background-color: var(--light-red-work);
+  background-image: url("./assets/icon-work.svg");
+  background-position: top -0.5rem right 1rem;
+}
+
+.bkg_Play {
+  background-color: var(--soft-blue-play);
+  background-image: url("./assets/icon-play.svg");
+  background-position: top -0.3rem right 1rem;
+}
+
+.bkg_Study {
+  background-color: var(--light-red-study);
+  background-image: url("./assets/icon-study.svg");
+  background-position: top -0.4rem right 1rem;
+}
+
+.bkg_Exercise {
+  background-color: var(--lime-green-exercise);
+  background-image: url("./assets/icon-exercise.svg");
+  background-position: top 0.1rem right 1rem;
+}
+
+.bkg_Social {
+  background-color: var(--violet-social);
+  background-image: url("./assets/icon-social.svg");
+  background-position: top -0.75rem right 1rem;
+}
+
+.bkg_SelfCare {
+  background-color: var(--soft-orange-self-care);
+  background-image: url("./assets/icon-self-care.svg");
+  background-position: top -0.85rem right 1rem;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: var(--activity-border-radius);
+  background-color: var(--dark-blue);
+  min-width: 100%;
+  height: 78%;
+
+  padding: 1.65rem 1.4rem;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bottomContainer:hover {
+  background-color: var(--activity-hover-bkg);
+  cursor: pointer;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activityName {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.imgDots {
+  mask-image: url("./assets/icon-ellipsis.svg"); 
+  mask-repeat: no-repeat;   
+  mask-position: right 0 top 0.5rem;
+  mask-size: contain;
+  width: 1.2rem;
+  height: 1rem;
+  background-color: var(--pale-blue);
+  transition: background-color 0.4s;
+}
+
+.imgDots:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.currentHours {
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+.hoursContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.previousHours {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--pale-blue);
+  letter-spacing: 0.025rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .allContainer {
+    height: 100%;
+  }
+
+  .bottomContainer {
+    height: 82%;
+    padding: 1.75rem 1.75rem 1.75rem 1.6rem;
+  }
+
+  .activityName {
+    font-size: 1.05rem;
+  }
+
+  .imgDots {
+    mask-size: 1rem;
+  }
+
+  .hoursContainer {
+    flex-direction: column;    
+    align-items: flex-start;    
+    padding-top: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .currentHours {
+    font-size: 3rem;
+  }
+}
