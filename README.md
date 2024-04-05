@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site]()
+- [Live Site](https://rokandic.github.io/practice-FM-time-tracking-dashboard/)
 
 ### Built with
 
